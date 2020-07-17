@@ -1,0 +1,27 @@
+<html> 
+<head> 
+   	<title>Ejemplo Checkbox</title> 
+<script type="text/javascript"> 
+    function alertaChecked(){ 
+        alert(document.miFormulario.miCheck.checked) 
+    } 
+
+    function metodoClick(){ 
+        document.miFormulario.miCheck.click()
+        alert (document.miFormulario.miCheck.value) 
+    } 
+    </script> 
+</head>
+
+<body> 
+    <form name="miFormulario"> 
+        Holaaaaa: <input type="checkbox" value="Holaaaaa:"    name="miCheck"> 
+        <br> 
+        <br> 
+        <input type="button" value="informa de su estado" onclick="alertaChecked()">
+        <br> 
+        <br>  
+        <input type="button" value="activa el chekbox y de su contenido" onclick="metodoClick()"> 
+    </form> 
+</body> 
+</html>

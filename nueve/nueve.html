@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueve</title>
+
+    <script type="text/javascript" >
+        function calcularEdad(fecha) {
+            var hoy = new Date();
+            var cumpleanos = new Date(fecha);
+            var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+            var l = hoy.getMonth() - cumpleanos.getMonth();
+
+            if (l < 0 || (l === 0 && hoy.getDate() < cumpleanos.getDate())) {
+                edad--;
+            }
+
+            alert('Tu edad es: '+ edad);
+        }
+
+   </script>
+
+</head>
+<body>
+    <h1>Ingrese su fecha de Nacimiento</h1>
+    Dia: <input type="date" id="miFecha">
+
+    <button onclick="calcularEdad('miFecha')">Calcular</button>
+</body>
+</html>

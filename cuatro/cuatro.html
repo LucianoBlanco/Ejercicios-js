@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head>
+    <meta name="description" content="Portal web aprenderaprogramar.com">
+    <meta name="keywords" content="aprender, programar, cursos, libros"><meta charset="utf-8">
+    
+    <title>Cuatro</title>
+
+    <script type="text/javascript">
+	
+        window.onload = function () {
+
+
+            elemH = document.querySelectorAll('h1, h3');
+            
+            elemP = document.querySelectorAll('p');
+
+            for (var i = 0; i < elemH.length; i++) {
+                elemH[i].onmouseover = function () {
+                    return this.style.color = "orange";
+                }
+                elemH[i].onmouseout = function() {
+                    return this.style.color = "black";
+                }
+            }
+
+            for (var i = 0; i < elemP.length; i++) {
+                elemP[i].onmouseover = function() {return this.style.backgroundColor = "yellow";}
+                elemP[i].onmouseout = function(){return this.style.backgroundColor = "transparent"};
+            }
+            
+        }
+	
+    </script>
+
+</head>
+
+<body> 
+
+    <h1>Arranca en Negro</h1>
+
+    <p>Cuando pasa sobre la letra CAMBIA a Naranja .</p>
+
+    <h3>Esto es un h3</h3>
+
+    <p>Y cuando sale del naranja se pone en Rojo y el texto comun en amarillo cuando se pasa encima</p>
+
+</body>
+</html>

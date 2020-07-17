@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seis</title>
+    <!-- BOOSTRAP CDN-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+
+    <script type="text/javascript">
+        function aleatorio() {
+            for(let i = 0; i < 10; i++){
+                var aleatorio = Math.round(Math.random()*10);
+                alert("Número aleatorio entre 0 y 10:" + " " + " " +aleatorio);
+            }
+                
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" value="Valores" class="btn btn-primary" onclick="aleatorio()">
+    </div>
+</body>
+</html>

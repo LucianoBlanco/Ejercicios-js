@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Siete</title>
+    <script type="text/javascript" >
+
+        function cambiar(id) {
+            var texto=document.getElementById("texto")
+            console.log(id)
+            console.log(texto)
+            if (id=='rojo') {
+                texto.style.color="red"
+            }
+            if (id=='verde') {
+                texto.style.color="green"
+            }
+            if (id=='marron') {
+                texto.style.color="brown"
+            }
+            
+        }
+    </script>
+</head>
+<body>
+
+
+
+<div>
+  <p style="color:black;" id="texto"> ESTE ES EL TEXTO A CAMBIAR DE COLOR</p>
+</div><br>
+
+<button type="button"  onclick="cambiar('rojo')" >A Rojo</button>
+<button type="button"  onclick="cambiar('verde')" >A Verde</button>
+<button type="button"  onclick="cambiar('marron')" >A Marron</button>
+
+
+</body>
+</html>
